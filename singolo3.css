@@ -1,4 +1,3 @@
-
 @font-face {
 	font-weight: 400;
 	font-family: 'Lato-Black';
@@ -23,128 +22,141 @@
 	src: url("assets/fonts/Lato-Bold.ttf") format("truetype");
 }
 
-main {
+
+.form {
 width: 1020px;
 margin: 0 auto;
+background-color: #f06c64;
 }
 
-.portfolio {
-    padding: 65px 30px 74px 30px;
-    margin: 0;
-    background-color: #2d303a;
-}
-.portfolio-header {
-    color:#666d89;
+.quote {
+    color:#f0d8d9;
     font-size: 30px;
     font-family: 'Lato-Black', 'Arial', sans-serif;
-    padding: 0 10px 30px;
+    padding: 38px 40px 30px;
     margin: 0;
 }
 
-.portfolio-list-button {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    width: 290px;
-    margin: 0;
-    padding: 10px;
-    
-}
-
-.portfolio-item-button button {
-    color: #767e9e;
-    font-size: 12px;
-    font-family: 'Lato-Regular', 'Arial', sans-serif;  
-    background: transparent;
-    border: 1px solid #767e9e;
-    border-radius: 5px;
-    }
-
-.portfolio-item-button button:hover,
-.portfolio-item-button button:focus,
-.portfolio-item-button .button-active {
-    color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    outline: none;
-}
-
-.portfolio-description {
-    color:#767e9e;
+.quote-description {
+    color:#f0d8d9;
     font-size: 18px;
-    font-family: 'Lato-Light', 'Arial', sans-serif;
-    padding: 0 10px 15px;
-    margin: 0;
-}
-
-.portfolio-images-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.portfollio-full {
-    padding: 10px;
-    margin: 0;
-}
-
-.about-us {
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 65px 40px 70px;
-    
-}
-
- .about-us-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
- }
-
- .about-us-item {
-    padding-right: 20px;      
- }
-
- .about-us-header {
-    color:#666d89;
-    font-size: 30px;
-    font-family: 'Lato-Black', 'Arial', sans-serif;
-    margin: 0;
-    padding-bottom: 35px;
-    
- }
-
- .about-us-description {
-    color:#767e9e;
-    font-size: 18px;
-    font-family: 'Lato-Light', 'Arial', sans-serif;
-    margin: 0;
-    padding-bottom: 44px;
     line-height: 30px;
- }
+    font-family: 'Lato-Light', 'Arial', sans-serif;
+    padding: 0 40px 51px;
+    margin: 0;
+}
 
- .about-us-name {
-    color:#666d89;
+.form-main input,
+.form-main input::-webkit-input-placeholder,
+.form-main textarea,
+.form-main textarea::-webkit-input-placeholder {
+background-color: #d6564f;
+margin-bottom: 20px;
+border: none;
+border-radius: 3px;
+padding: 15px 10px;
+color: #f48c8f;
+font-size: 12px;
+font-family: 'Lato-Regular', 'Arial', sans-serif; 
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+
+.form-wrapper {
+    padding: 0 40px 55px 40px;
+    
+}
+
+.contact-information {
+    width: 300px;
+}
+
+.contact {
     font-size: 18px;
     font-family: 'Lato-Black', 'Arial', sans-serif;
+    color: #f0d8d9;
     margin: 0;
-    padding: 20px 0px;
- }
 
- .about-us-cv {
-    color: #767e9e;
+}
+
+.quisque {
     font-size: 12px;
-    font-family: 'Lato-Regular', 'Arial', sans-serif;
-    list-style: none;    
+    font-family: 'Lato-Regular', 'Arial', sans-serif; 
+    color: #f0d8d9;
+    line-height: 21.56px;
+    margin: 20px 0 30px;
+}
+
+.info {
+    padding-left: 22px;
+    position: relative;   
+}
+
+.street {
+    font-size: 12px;
+    font-family: 'Lato-Regular', 'Arial', sans-serif; 
+    color: #f0d8d9;
+}
+
+.number {
+    font-size: 12px;
+    font-family: 'Lato-Regular', 'Arial', sans-serif; 
+    color: #f0d8d9;
+}
+
+.email {
+    font-size: 12px;
+    font-family: 'Lato-Regular', 'Arial', sans-serif; 
+    color: #f0d8d9;
+}
+
+.info::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.street::before {
+	background-image: url('assets/images/locationFooter.png');
+}
+.number::before {
+	background-image: url('assets/images/phoneFooter.png');
+}
+.email::before {
+	background-image: url('assets/images/mailFooter.png');
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    width: 1020px;
+    box-sizing: border-box;
+    background-color: #2d303a;
+    margin: 0 auto;
+}
+
+.copyright {
     margin: 0;
-    padding-bottom: 30px;
+    padding: 0;
+    color: #575d74;
+    font-size: 12px;
+    font-family: 'Lato-Regular', 'Arial', sans-serif; 
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -172,7 +184,7 @@ input[type="range"].visually-hidden {
 .about-us-link::before {
 	content:'';
 	position: absolute;
-	top: 0;
+	top: -10px;
 	left: 0;
 	width: 33px;
 	height: 33px;
