@@ -14,18 +14,17 @@
     <link rel="preload" href="assets/fonts/Vegur-Light.otf" as="font" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/Vegur-Regular.otf" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="singolo.css">
-    <script src="script.js"></script>
 </head>
 <body>
   <header>
     <h1 class="logo">Singolo<span>*</span></h1>
     <nav>
       <ul class="menu-list">
-        <li class="menu-item menu-item--active"><a href="#">Home</a></li>
-        <li class="menu-item"><a href="#">Services</a></li>
-        <li class="menu-item"><a href="#">Portfolio</a></li>
-        <li class="menu-item"><a href="#">About</a></li>
-        <li class="menu-item"><a href="#">Contact</a></li>       
+        <li class="menu-item"><a class="menu-home menu-active" href="#">Home</a></li>
+        <li class="menu-item"><a class="menu-services" href="#services">Services</a></li>
+        <li class="menu-item"><a class="menu-portfolio" href="#portfolio">Portfolio</a></li>
+        <li class="menu-item"><a class="menu-about" href="#about-us">About</a></li>
+        <li class="menu-item"><a class="menu-form" href="#form">Contact</a></li>       
       </ul>
     </nav>
   </header>
@@ -34,7 +33,8 @@
       <button class="slider-left">
         <img src="assets/images/chev-left.png" width="16px" height="27px" alt="arrow">
       </button>
-      <div class="slider-images">
+      <div class="slider-container">
+        <div class="slider-images slider-images--1 slider-images--active">
         <div class="slider-image1">
           <img class="slider-image1-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone1">
           <img class="slider-image1-main" src="assets/images/image1.jpg" width='193px' height='340px' alt="phone1">
@@ -44,11 +44,22 @@
           <img class="slider-image2-main" src="assets/images/image2.jpg" width='340px' height='193px' alt="phone2">
         </div>
       </div>
+      <div class="slider-images slider-images--2">
+        <div class="slider-image2">
+          <img class="slider-image2-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone2">
+          <img class="slider-image2-main" src="assets/images/image2.jpg" width='340px' height='193px' alt="phone2">
+        </div>
+        <div class="slider-image1">
+          <img class="slider-image1-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone1">
+          <img class="slider-image1-main" src="assets/images/phone-vertical-display.png" width='193px' height='340px' alt="phone1">
+        </div>
+      </div>
+      </div>
       <button class="slider-right">
           <img src="assets/images/chev.png" width="16px" height="27px" alt="arrow">
       </button>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="services-header">Our Services</h2>
       <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
         non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
@@ -92,7 +103,7 @@
           </li>         
         </ul>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2 class="portfolio-header">Portfolio</h2>
         <h3 class="portfolio-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
            eget lacinia odio sem nec elit.</h3>
@@ -160,7 +171,7 @@
           </li>   
         </ul>       
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <h3 class="about-us-header">About Us</h3>
         <p class="about-us-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
           Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
@@ -229,18 +240,18 @@
 
           </ul>
       </section>
-      <section class="form">
+      <section class="form" id="form">
         <h2 class="quote">Get a Quote</h2>
         <p class="quote-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
             Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="form-wrapper">
-                <form name="mailex" ectype="text/plain" 
-                action="mailto:katia310790@mail.ru" method="POST" class="form-main">
+                <form  action="#" method="POST" class="form-main">
                   <input id="name" type="text" name="Firstname" placeholder="Name (Required)" required>
                   <input id="email" type="email" name="Email" placeholder="Email (Required)" required>
                   <input id="subject" type="text" name="Subject" placeholder="Subject" >
-                  <textarea id="Describe" rows="15" cols="50"  name="Describe" placeholder="Describe your project in detail..." ></textarea>
+                  <textarea id="Describe" rows="15" cols="5"  name="Describe" maxlength="70" placeholder="Describe your project in detail..." ></textarea>
+                  <input class="submit-button"type="submit" value="send">
                 </form>
                 <div class="contact-information">
                     <h3 class="contact">Contact Information</h3>
@@ -271,5 +282,6 @@
             </div>  
       </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
