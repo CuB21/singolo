@@ -153,3 +153,15 @@ imageList.addEventListener('click', (e) => {
         }   
     })
 
+
+    const menuButton = document.querySelector('.menu-button');
+    
+    menuButton.addEventListener('click', () => {
+      if (menuButton.classList.contains('menu-button--active')) {
+        menuButton.classList.remove('menu-button--active');
+        menuList.classList.remove('menu-list--active');
+      } else {
+        menuButton.classList.add('menu-button--active');
+        menuList.classList.add('menu-list--active');
+      }
+    });
