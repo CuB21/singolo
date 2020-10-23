@@ -75,10 +75,8 @@ header {
 	background-color: #2d303a;
 	padding: 0 40px;
     align-items: center;
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     box-sizing: border-box;
     z-index: 1;
 }
