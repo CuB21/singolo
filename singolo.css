@@ -79,6 +79,17 @@ header {
     left: 0;
     box-sizing: border-box;
     z-index: 1;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: #323746;
 }
 
 .menu-button {
@@ -173,6 +184,13 @@ header {
 	padding: 0px;
 	border: none;
 	background: transparent;
+}
+
+.slider-left:hover,
+.slider-right:hover,
+.slider-left:focus,
+.slider-right:focus {
+    outline: 2px solid #E94348;
 }
 
 .to-left {
@@ -405,6 +423,8 @@ header {
     flex-wrap: wrap;
     list-style: none;
     width: 100%;
+    max-height: 601px;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -714,9 +734,19 @@ input[type="range"].visually-hidden {
         align-items: center;
         padding: 30px 40px;
         max-width: 940px;
-        
+        position: relative;
         background-color: #2d303a;
         margin: 0 auto;
+    }
+
+    .footer-end::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 6px;
+        background: #323746;
     }
     
     .copyright {
@@ -839,6 +869,11 @@ input[type="range"].visually-hidden {
         .form-main {
             width: 442px;
         }
+
+        .portfolio-images-list {
+            max-height: 794px;
+        }
+        
       }
 
       @media screen and (max-width: 662px) {
@@ -942,6 +977,10 @@ input[type="range"].visually-hidden {
             padding: 0 15px;
         }
 
+        .slider {
+            padding: 0 10px;
+        }
+
         .menu-button {
             display: block;
             position: absolute;
@@ -989,6 +1028,10 @@ input[type="range"].visually-hidden {
         
         .logo span {
             color: #f06c64;
+        }
+
+        .portfolio-images-list {
+            max-height: 553px;
         }
 
         .portfollio-full {
