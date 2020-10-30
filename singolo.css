@@ -616,7 +616,7 @@ input[type="range"].visually-hidden {
     color: #f0d8d9;
     font-size: 30px;
     font-family: 'Lato-Black', 'Arial', sans-serif;
-    padding: 38px 40px 30px;
+    padding: 38px 0;
     margin: 0;
 }
 
@@ -625,7 +625,7 @@ input[type="range"].visually-hidden {
     font-size: 18px;
     line-height: 30px;
     font-family: 'Lato-Light', 'Arial', sans-serif;
-    padding: 0 40px 51px;
+    padding: 0 0 51px;
     margin: 0;
 }
 
@@ -655,7 +655,7 @@ input[type="range"].visually-hidden {
 }
 
 .form-wrapper {
-    padding: 0 40px 55px 40px;
+    padding: 0 40px 55px 0;
 
 }
 
@@ -943,7 +943,9 @@ input[type="range"].visually-hidden {
         max-width: 687px;
     }
 
-
+    .wrapper-form {
+        max-width: 687px;
+    }
 
 .services-list {
     display: grid;
@@ -1147,7 +1149,11 @@ input[type="range"].visually-hidden {
         padding-right: 30px;
     }
 
-
+    .wrapper-form {
+        max-width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
 .services-list {
     display: grid;
