@@ -17,56 +17,67 @@
 </head>
 <body>
   <header class="wrapper">
-    <button class="menu-button">
-      <img src = "assets/images/menu-icon.svg" width="25px" height="25px" alt="open-menu">
-    </button>
-    <h1 class="logo">Singolo<span>*</span></h1>
-    <nav>
-      <ul class="menu-list">
-        <li class="menu-item"><a class="menu-home menu-active" href="#">Home</a></li>
-        <li class="menu-item"><a class="menu-services" href="#services">Services</a></li>
-        <li class="menu-item"><a class="menu-portfolio" href="#portfolio">Portfolio</a></li>
-        <li class="menu-item"><a class="menu-about" href="#about-us">About</a></li>
-        <li class="menu-item"><a class="menu-form" href="#form">Contact</a></li>       
-      </ul>
-    </nav>
+    <div class="wrapper-container">
+      <button class="menu-button">
+        <img src = "assets/images/menu-icon.svg" width="25px" height="25px" alt="open-menu">
+      </button>
+      <h1 class="logo">Singolo<span>*</span></h1>
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-home menu-active" href="#">Home</a></li>
+          <li class="menu-item"><a class="menu-services" href="#services">Services</a></li>
+          <li class="menu-item"><a class="menu-portfolio" href="#portfolio">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-about" href="#about-us">About</a></li>
+          <li class="menu-item"><a class="menu-form" href="#form">Contact</a></li>       
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
+
+
+
     <section class="slider">
-      <button class="slider-left">
-        <img src="assets/images/chev-left.png" width="16px" height="27px" alt="arrow">
-      </button>
-      <div class="slider-container">
-        <div class="slider-images slider-images--1 slider-images--active">
-        <div class="slider-image1">
-          <img class="slider-image1-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone1">
-          <img class="slider-image1-main" src="assets/images/image1.jpg" width='193px' height='340px' alt="phone1">
+      <div class="wrapper-slider">
+        <button class="slider-left">
+          <img src="assets/images/chev-left.png" width="16px" height="27px" alt="arrow">
+        </button>
+        <div class="slider-container">
+          <div class="slider-images slider-images--1 slider-images--active">
+          <div class="slider-image1">
+            <img class="slider-image1-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone1">
+            <img class="slider-image1-main" src="assets/images/image1.jpg" width='193px' height='340px' alt="phone1">
+          </div>
+          <div class="slider-image2">
+            <img class="slider-image2-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone2">
+            <img class="slider-image2-main" src="assets/images/image2.jpg" width='340px' height='193px' alt="phone2">
+          </div>
         </div>
-        <div class="slider-image2">
-          <img class="slider-image2-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone2">
-          <img class="slider-image2-main" src="assets/images/image2.jpg" width='340px' height='193px' alt="phone2">
+        <div class="slider-images slider-images--2">
+          <div class="slider-image1 slider-image1-backimage1">
+            <img class="slider-image1-small1" src="assets/images/phone11.png" width='140px' height='297px' alt="phone1">
+            <img class="slider-image1-content1" src="assets/images/image1.jpg" width='122px' height='216px' alt="phone1">
+          </div>
+          <div class="slider-image1">
+            <img class="slider-image1-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone1">
+            <img class="slider-image1-main" src="assets/images/phone-vertical-display.png" width='193px' height='340px' alt="phone1">
+          </div>
+          <div class="slider-image1 slider-image1-backimage2">
+            <img class="slider-image1-small2" src="assets/images/phone11.png" width='140px' height='297px' alt="phone1">
+            <img class="slider-image1-content2" src="assets/images/image1.jpg" width='122px' height='216px' alt="phone1">
+          </div>
         </div>
+        </div>
+        <button class="slider-right">
+            <img src="assets/images/chev.png" width="16px" height="27px" alt="arrow">
+        </button>
       </div>
-      <div class="slider-images slider-images--2">
-        <div class="slider-image1 slider-image1-backimage1">
-          <img class="slider-image1-small1" src="assets/images/phone11.png" width='140px' height='297px' alt="phone1">
-          <img class="slider-image1-content1" src="assets/images/image1.jpg" width='122px' height='216px' alt="phone1">
-        </div>
-        <div class="slider-image1">
-          <img class="slider-image1-back" src="assets/images/phone11.png" width='215px' height='458px' alt="phone1">
-          <img class="slider-image1-main" src="assets/images/phone-vertical-display.png" width='193px' height='340px' alt="phone1">
-        </div>
-        <div class="slider-image1 slider-image1-backimage2">
-          <img class="slider-image1-small2" src="assets/images/phone11.png" width='140px' height='297px' alt="phone1">
-          <img class="slider-image1-content2" src="assets/images/image1.jpg" width='122px' height='216px' alt="phone1">
-        </div>
-      </div>
-      </div>
-      <button class="slider-right">
-          <img src="assets/images/chev.png" width="16px" height="27px" alt="arrow">
-      </button>
-    </section>
+      </section>
+
+      
+      
     <section class="services" id="services">
+    <div class="wrapper-services">  
       <h2 class="services-header">Our Services</h2>
       <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
         non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
@@ -109,8 +120,12 @@
               viverra nibh. Fusce vitae aliquam tellus.</p>
           </li>         
         </ul>
+      </div>   
     </section>
+  
+
     <section class="portfolio" id="portfolio">
+      <div class="wrapper-portfolio">
         <h2 class="portfolio-header">Portfolio</h2>
         <h3 class="portfolio-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
            eget lacinia odio sem nec elit.</h3>
@@ -130,55 +145,58 @@
            </ul>
         <ul class="portfolio-images-list">
           <li class="portfollio-full">
-            <img src="assets/images/Image1,1.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image1,1.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image2,2.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image2,2.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image3.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image3.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image4.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image4.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image5.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image5.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image6.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image6.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image7.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image7.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image8.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image8.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image9.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image9.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image10.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image10.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image11.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image11.png" alt="ship">
           </li>
 
           <li class="portfollio-full">
-            <img src="assets/images/Image12.png" alt="ship" height="183" width="215">
+            <img src="assets/images/Image12.png" alt="ship">
           </li>   
         </ul>       
-      </section>
+      </div>
+    </section>
+
       <section class="about-us" id="about-us">
+        <div class="wrapper-us">
         <h3 class="about-us-header">About Us</h3>
         <p class="about-us-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
           Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
@@ -246,9 +264,12 @@
             </li>               
 
           </ul>
+        </div>
       </section>
+
       <section class="form" id="form">
-        <h2 class="quote">Get a Quote</h2>
+        <div class="wrapper-form">
+          <h2 class="quote">Get a Quote</h2>
         <p class="quote-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
             Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -270,9 +291,13 @@
                                                   
                   </div>
             </div>
+          
+        </div>
+        
       </section>
-      <footer class="footer-end"> 
-          <p class="copyright">© Copyright 2013 · by PSDchat.com</p> 
+      <footer class="footer-end">
+        <div class="footer-wrapper">
+          <p class="copyright">&copy Copyright 2013 · by PSDchat.com</p> 
           <div class="about-us-links">
               <a class="about-us-link about-us-facebook" href="#">
                 <span class="visually-hidden">Facebook</span>
@@ -287,6 +312,8 @@
                 <span class="visually-hidden">Linkedln</span>
               </a>
             </div>  
+        </div> 
+          
       </footer>
   </main>
   <script src="script.js"></script>
