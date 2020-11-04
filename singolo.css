@@ -73,7 +73,8 @@ header {
     background-color: #2d303a;
     width: 100%;
     position: relative;
-    padding: 0;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 header::after {
@@ -133,6 +134,8 @@ header::after {
 .slider {
     max-width: 100%;
     background-color: #f06c64;
+    padding: 0 40px;
+    box-sizing: border-box;
 
 }
 
@@ -296,6 +299,8 @@ header::after {
 .services {
     background-color: #f2f2f2;
     width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
 
 }
 
@@ -389,6 +394,8 @@ header::after {
 .portfolio {
     background-color: #2d303a;
     width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .wrapper-portfolio {
@@ -473,6 +480,8 @@ header::after {
 .about-us {
     background-color: #f2f2f2;
     width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .wrapper-us {
@@ -605,6 +614,8 @@ input[type="range"].visually-hidden {
 .form {
     width: 100%;
     background-color: #f06c64;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .wrapper-form {
@@ -781,10 +792,12 @@ input[type="range"].visually-hidden {
 }
 
 .footer-end {
-    padding: 30px 0;
+    padding: 30px 40px 30px;
+    box-sizing: border-box;
     width: 100%;
     background-color: #2d303a;
     position: relative;
+    
 }
 
 .footer-end::before {
@@ -1061,14 +1074,18 @@ input[type="range"].visually-hidden {
 
 }
 
+@media screen and (max-width: 545px) {
+    .about-us-links{
+        display: flex;
+        flex-wrap: wrap;
+        height: 70px;
+    }
+}
 
 @media screen and (max-width: 460px) {
     header {
         flex-direction: row-reverse;
         justify-content: flex-end;
-    }
-
-    .slider {
         padding: 0;
     }
 
@@ -1094,12 +1111,13 @@ input[type="range"].visually-hidden {
         display: block;
         flex-direction: column;
         position: absolute;
-        top: 0;
+        top: 34px;
         left: 0;
         width: 207px;
         justify-content: flex-start;
         background-color: #2d303a;
         padding: 172px 0 320px 71px;
+        z-index: 1000;
     }
 
     .menu-item {
@@ -1127,9 +1145,18 @@ input[type="range"].visually-hidden {
         padding: 0 30px;
     }
 
+    .slider {
+        padding: 0;
+        z-index: 0;
+    }
+
     .wrapper-slider {
         max-width: 400px;
     }
+
+     .services {
+         padding: 0;
+     }
 
     .wrapper-services {
         max-width: 400px;
@@ -1168,6 +1195,9 @@ input[type="range"].visually-hidden {
     position: relative;
     list-style: none;
 }
+.portfolio {
+    padding: 0;
+}
 
 .portfolio-images-list {
     display: grid;
@@ -1175,12 +1205,18 @@ input[type="range"].visually-hidden {
     grid-template-columns: repeat(2, 1fr);
     max-height: 553px;
 }
+.about-us {
+    padding: 0;
+}
 
 .about-us-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
+}
+.form {
+    padding: 0;
 }
 
 .footer-wrapper {
@@ -1194,7 +1230,11 @@ input[type="range"].visually-hidden {
     }
 
     .form-main {
-        width: 315px;
+       max-width: 315px;
+    }
+
+    .contact-information {
+        padding-left: 0;
     }
 
     .footer-end {
